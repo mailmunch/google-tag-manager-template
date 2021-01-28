@@ -15,5 +15,9 @@
 homepage: "https://www.mailmunch.com/"
 documentation: "https://www.mailmunch.com/"
 versions:
+#Latest Versions
+  - sha: fc28cc48363c60661c901a8a1fd51d105b6bc513
+    changeNotes: Updated template.tpl with latest meta information
+#Older Versions
   - sha: 5f02a788b90ae804f86b04aa24af8937e567874a
     changeNotes: Initial Version
