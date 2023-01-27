@@ -51,6 +51,7 @@ const setInWindow = require('setInWindow');
 const injectScript = require('injectScript');
 
 setInWindow('_mailmunchSiteId', data.siteID, true);
+setInWindow('_mailmunchShouldSetcookie', data.shouldSetcookie, true);
 
 injectScript('https://a.mailmunch.co/app/v1/site.js', data.gtmOnSuccess, data.gtmOnFailure, "Mailmunch JS Loaded");
 
