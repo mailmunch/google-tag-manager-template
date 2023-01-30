@@ -41,6 +41,18 @@ ___TEMPLATE_PARAMETERS___
         "type": "NUMBER"
       }
     ]
+  },
+  {
+    "type": "TEXT",
+    "name": "shouldSetcookie",
+    "displayName": "Should Set Cookie",
+    "simpleValueType": true,
+    "help": "\u003cstrong\u003eShould Set Cookie\u003c/strong\u003e is a boolean that defines wheather mailmunch can set cookies or not.",
+    "valueValidators": [
+      {
+        "type": "BOOLEAN"
+      }
+    ]
   }
 ]
 
@@ -137,7 +149,46 @@ ___WEB_PERMISSIONS___
                     "boolean": false
                   }
                 ]
-              }
+              },
+              {
+                "type": 3,
+                "mapKey": [
+                  {
+                    "type": 1,
+                    "string": "key"
+                  },
+                  {
+                    "type": 1,
+                    "string": "read"
+                  },
+                  {
+                    "type": 1,
+                    "string": "write"
+                  },
+                  {
+                    "type": 1,
+                    "string": "execute"
+                  }
+                ],
+                "mapValue": [
+                  {
+                    "type": 8,
+                    "boolean": "_mailmunchShouldSetcookie"
+                  },
+                  {
+                    "type": 8,
+                    "boolean": true
+                  },
+                  {
+                    "type": 8,
+                    "boolean": true
+                  },
+                  {
+                    "type": 8,
+                    "boolean": false
+                  }
+                ]
+              },
             ]
           }
         }
