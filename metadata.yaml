@@ -16,9 +16,11 @@ homepage: "https://www.mailmunch.com/"
 documentation: "https://www.mailmunch.com/"
 versions:
   #Latest Versions
+  - sha: 5a2389724ca71f4a3f8fa2891a099f59d12c50b9
+    changeNotes: removed variable
+  #Older Versions
   - sha: 20e275aead4bae5b96d1ae463e8ff1d470fe2107
     changeNotes: new variable added for cookies management
-  #Older Versions
   - sha: 3a2ffe3fda0c91e0ebb812dded27c6c7e589c24f
     changeNotes: Updated template.tpl
   - sha: fc28cc48363c60661c901a8a1fd51d105b6bc513
