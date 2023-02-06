@@ -41,18 +41,6 @@ ___TEMPLATE_PARAMETERS___
         "type": "NUMBER"
       }
     ]
-  },
-  {
-    "type": "TEXT",
-    "name": "shouldSetcookie",
-    "displayName": "Should Set Cookie",
-    "simpleValueType": true,
-    "help": "\u003cstrong\u003eShould Set Cookie\u003c/strong\u003e is a boolean that defines wheather mailmunch can set cookies or not.",
-    "valueValidators": [
-      {
-        "type": "BOOLEAN"
-      }
-    ]
   }
 ]
 
@@ -63,7 +51,7 @@ const setInWindow = require('setInWindow');
 const injectScript = require('injectScript');
 
 setInWindow('_mailmunchSiteId', data.siteID, true);
-setInWindow('_mailmunchShouldSetcookie', data.shouldSetcookie, true);
+setInWindow('_mailmunchShouldSetcookie', true, true);
 
 injectScript('https://a.mailmunch.co/app/v1/site.js', data.gtmOnSuccess, data.gtmOnFailure, "Mailmunch JS Loaded");
 
@@ -149,46 +137,7 @@ ___WEB_PERMISSIONS___
                     "boolean": false
                   }
                 ]
-              },
-              {
-                "type": 3,
-                "mapKey": [
-                  {
-                    "type": 1,
-                    "string": "key"
-                  },
-                  {
-                    "type": 1,
-                    "string": "read"
-                  },
-                  {
-                    "type": 1,
-                    "string": "write"
-                  },
-                  {
-                    "type": 1,
-                    "string": "execute"
-                  }
-                ],
-                "mapValue": [
-                  {
-                    "type": 8,
-                    "boolean": "_mailmunchShouldSetcookie"
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": false
-                  }
-                ]
-              },
+              }
             ]
           }
         }
